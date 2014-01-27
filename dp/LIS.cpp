@@ -11,7 +11,7 @@
 #define N 15
 
 // method : O(n*n)
-int LNS(int *A,int n)
+int LIS(int *A,int n)
 {
   int len = 0;
   int *d = new int[n];
@@ -39,6 +39,6 @@ int main()
 {
   //int A[N] = {3,5,3,1,5,8,9,1,3,5};
   int A[N] = {7,5,6,8,10,7,9,3,8,7,4,1,8,9,4};
-  int result = LNS(A, N);
+  int result = LIS(A, N);
   printf("result:%d\n", result);
 }
