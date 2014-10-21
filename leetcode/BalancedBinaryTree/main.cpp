@@ -25,7 +25,7 @@ public:
       if (node == NULL) {
         return 0;
       } else {
-        return max(depth(node->left), depth(node->right));
+        return max(depth(node->left), depth(node->right)) + 1;
       }
     }
 
