@@ -7,7 +7,7 @@
  * Return true because "leetcode" can be segmented as "leet code"
  *
  * Solution:
- *  DP[j] = DP[j - i] && s.substr(0, i) in s
+ *  DP[j] |= DP[j - i] && s.substr(j - i, i) in s; (i from 1 to j)
  *
  */
 #include <string>
